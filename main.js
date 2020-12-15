@@ -867,7 +867,6 @@ if (true) { // 只是为了折叠方便
     var GITHUB_URL = "";
     var temp_url = "file:" + window.location.pathname;
     var LOCAL_URL = temp_url.substring(0, temp_url.length - "canvas.html".length);
-    console.log(window.location.pathname);
     var assetsResFrom = getQueryVariable("res");
     var usingDir;
     switch (assetsResFrom) {
