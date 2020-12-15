@@ -865,7 +865,9 @@ if (true) { // 只是为了折叠方便
     var globalPredicates = [1];
     var CODING_URL = "https://heliumjt.coding.net/p/heliumjt/d/sarpadian_empire_resources/git/raw/master/";
     var GITHUB_URL = "";
-    var LOCAL_URL = "file:///C:/Users/dx390/Desktop/sarpadian_empire/sarpadian_empire_resources/";
+    var temp_url = "file:" + window.location.pathname;
+    var LOCAL_URL = temp_url.substring(0, temp_url.length - "canvas.html".length);
+    console.log(window.location.pathname);
     var assetsResFrom = getQueryVariable("res");
     var usingDir;
     switch (assetsResFrom) {
